@@ -1,21 +1,24 @@
-<div class="card mb-2 mt-2" style="padding: 2px;">
-  <div class="card-body">
-  <div class="row">
-    <div class="col-9">
-      <h4>
-        <b>{{ job['title'] }}</b>
-      </h4>
-      <div>
-        <b style="color: #787C80;">Location: </b><b>{{ job['location'] }}</b>
-      </div>
-      {% if 'salary' in job %}
-      <div>
-        <b style="color: #787C80;">Salary: </b><b>{{ job['salary'] }}</b>
-      </div>
-      {% endif %}
-      </div>
+<div>
+  <div class="card mx-4 my-2 shadow-sm" style="padding: 2px;">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-9">
+          <h4>
+            <b style="font-size: 28px;">{{ job['title'] }}</b>
+          </h4>
+          <div>
+            <b style="color: #787C80;">Location: </b><b>{{ job['location'] }}</b>
+          </div>
+          {% if 'salary' in job %}
+          <div>
+            <b style="color: #787C80;">Salary: </b><b>{{ job['salary'] }}</b>
+          </div>
+          {% endif %}
+        </div>
       <div class="col-3 d-flex align-items-center">
-        <button class="btn btn-outline-primary btn-lg" style="margin-left: auto;">Apply</button> <!-- style="float: right;" -->
+        <button class="btn btn-outline-primary btn-lg" style="margin-left: auto;">
+          Apply
+        </button> <!-- style="float: right;" -->
       </div>
     </div>
   </div>
